@@ -1,5 +1,6 @@
 package com.company;
 import java.util.Random;
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
@@ -7,11 +8,15 @@ public class Main {
 
         boolean value [] = new boolean[100];
         Random rand = new Random();
-        boolean yes;
+        boolean yes = false;
         int count = 0;
+        Scanner number = new Scanner(System.in);
+        System.out.println("How many times do you want to run it?");
+        int size = number.nextInt();
+        int total = 0;
 
 
-        for(int i = 0; i <= 100; i++){
+        for(int i = 0; i <= size; i++){
 
 
             while(yes == false){
@@ -29,11 +34,12 @@ public class Main {
 
                 }
             }
+            total = total + count;
 
         }
-        int average = count/100;
+        int average = total/size;
         System.out.println(average);
-        System.out.println(count);
+        //System.out.println(count);
 
 
 
