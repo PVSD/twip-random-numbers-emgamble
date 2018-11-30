@@ -38,7 +38,7 @@ public class Main {
 
         }
         int average = total/size;
-        System.out.println(average);
+        System.out.println("Average number of runs:" + average);
         //System.out.println(count);
 
 
